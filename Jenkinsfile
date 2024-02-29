@@ -2,7 +2,7 @@ node {
     def application = "devopsexample"
     def dockerhubaccountid = "suraj438" // Your Docker Hub username
 
-    def mvnHome = tool 'maven-3.9.6' // Maven version 3.9.6
+    def mvnHome = tool 'maven-3.6.3' // Maven version 3.9.6
 
     def dockerImage
 
@@ -10,7 +10,7 @@ node {
 
     stage('Clone Repo') {
         git url: 'https://github.com/SD1435/Docker-Project.git', branch: 'main'
-        mvnHome = tool 'maven-3.9.6' // Using Maven 3.9.6 for this project
+        mvnHome = tool 'maven-3.6.3' // Using Maven 3.9.6 for this project
     }
 
     stage('Build Project') {
