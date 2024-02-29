@@ -18,8 +18,8 @@
     <properties>
         <!-- Update Java version to JDK 17 -->
         <java.version>17</java.version>
-        <!-- Specify Lombok version -->
-        <lombok.version>1.18.22</lombok.version>
+        <!-- Update Lombok version -->
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <dependencies>
@@ -46,7 +46,6 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!-- Lombok dependency with specified version -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
